@@ -25,18 +25,21 @@
             },
         ];
 
-        const objectItem = '';
+        const objectItem = listUsers[0];
 
         function changeObjectMutate(object) {
-
+            object.firstName = 'Alexander'
+            return object
         }
 
         function changeObjectImmutable(object) {
-
+            const newObject = {...object};
+            newObject.firstName = 'John';
+            return newObject;
         }
 
         console.log(changeObjectMutate(objectItem))
-        // console.log(changeObjectImmutable(objectItem))
+        //console.log(changeObjectImmutable(objectItem))
 
         console.log(objectItem)
         console.log(listUsers)
