@@ -9,6 +9,24 @@
     <script>
         const text = 'всеМ прИвЕт, прИяТно ПоЗНакоМиТьсЯ!';
 
+        // Заменяем все заглавные буквы на буквы в нижнем регистре
+        const lowerCaseText = text.toLowerCase();
+
+        // Заменяем первую букву первого слова предложения на большую
+        const capitalizedText = lowerCaseText.charAt(0).toUpperCase() + lowerCaseText.slice(1);
+
+        // Заменяем слово "привет" на "пока"
+        const replacedText = capitalizedText.replace("привет", "пока");
+
+        // Выводим полученную строку в консоль
+        console.log(replacedText);
+
+        // Выводим количество символов в консоль
+        console.log(replacedText.length);
+
+        // Выводим последний символ в консоль
+        console.log(replacedText.charAt(replacedText.length - 1));
+        
     </script>
 </body>
 </html>
