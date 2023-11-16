@@ -7,7 +7,16 @@
 </head>
 <body>
     <script>
+        // Создаем переменную, которую можно перезаявить
+        var firstName = "Иван";
+        console.log(firstName); // Иван
+        firstName = "0";
+        console.log(firstName); // 0
 
+        // Создаем переменную, которую нельзя перезаявить
+        const age = 25;
+        console.log(age); // 25
+        age = 30; //Uncaught TypeError: Assignment to constant variable.
     </script>
 </body>
 </html>
