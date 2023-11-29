@@ -7,9 +7,17 @@
 </head>
 <body>
     <script>
-        function statsArray() {
+        function statsArray(...args) {
+            console.log(`Длина: ${args.length}`);
 
+            const maxElement = Math.max(...args);
+            const minElement = Math.min(...args);
+
+            console.log(`Максимальный элемент: ${maxElement}`);
+            console.log(`Минимальный элемент: ${minElement}`);
         }
+
+        statsArray(1, 2, 3, 10, 2, 5);
     </script>
 </body>
 </html>
